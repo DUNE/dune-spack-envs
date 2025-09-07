@@ -1,0 +1,352 @@
+ # -*- YAML -*-
+# This is a Spack Environment file.
+#
+# It describes a set of packages to be installed, along with
+# configuration settings.
+spack:
+  specs:
+  - larsoft%c,cxx=gcc@12.5.0
+  - dunesw%c,cxx=gcc@12.5.0
+  view: false
+  concretizer:
+    reuse:
+      from:
+      - type: local
+      - type: external
+    targets:
+      granularity: generic
+    unify: true
+  packages:
+    all:
+      target:
+      - x86_64_v2
+
+    art:
+      require:
+      - '@=3.14.04'
+      - build_type=RelWithDebInfo
+      - generator=ninja
+      - cxxstd=17
+      
+    artdaq-core:
+      require:
+      - '@v3_10_03'
+      - build_type=RelWithDebInfo
+      - generator=ninja
+      - ~bundle
+      - cxxstd=17
+      
+    art-root-io:
+      require:
+      - '@=1.13.06'
+      - build_type=RelWithDebInfo
+      - generator=ninja
+      - cxxstd=17
+      
+    canvas:
+      require:
+      - '@=3.16.04'
+      - build_type=RelWithDebInfo
+      - generator=ninja
+      - cxxstd=17
+      
+    canvas-root-io:
+      require:
+      - '@=1.13.06'
+      - build_type=RelWithDebInfo
+      - generator=ninja
+      - cxxstd=17
+      
+    cetlib:
+      require:
+      - '@=3.18.02'
+      - build_type=RelWithDebInfo
+      - generator=ninja
+      - cxxstd=17
+      
+    cetlib-except:
+      require:
+      - '@=1.09.01'
+      - build_type=RelWithDebInfo
+      - generator=ninja
+      - cxxstd=17
+      
+    cetmodules:
+      require:
+      - '@=3.26.00'
+      - build_type=Release
+      - generator=ninja
+      - '^cmake @3.27:3.36 ~ownlibs build_type=Release'
+    clhep:
+      require:
+      - '@=2.4.7.1'
+      - build_type=Release
+      - generator=ninja
+      - cxxstd=17
+    critic:
+      require:
+      - '@=2.13.06'
+      - build_type=RelWithDebInfo
+      - generator=ninja
+      - cxxstd=17
+      
+    cry:
+      require:
+      - '@=1.7'
+    fhicl-cpp:
+      require:
+      - '@=4.18.04'
+      - build_type=RelWithDebInfo
+      - generator=ninja
+      - cxxstd=17
+      
+    gallery:
+      require:
+      - '@=1.22.06'
+      - build_type=RelWithDebInfo
+      - generator=ninja
+      - cxxstd=17
+      
+    geant4:
+      require:
+      - '@10.6.1'
+      - build_type=RelWithDebInfo
+      - generator=ninja
+      - cxxstd=17
+      - ~vecgeom
+      - ~qt
+    hep-concurrency:
+      require:
+      - '@=1.09.02'
+      - build_type=RelWithDebInfo
+      - generator=ninja
+      - cxxstd=17
+      
+    ifdh-art:
+      require:
+      - '@=2.17.06'
+      - build_type=RelWithDebInfo
+      - generator=ninja
+      - cxxstd=17
+      
+    larana:
+      require:
+      - '@=10.00.16'
+      - build_type=Release
+      - generator=ninja
+      - cxxstd=17
+      
+    larcore:
+      require:
+      - '@=10.00.02'
+      - generator=ninja
+      - build_type=Release
+      - cxxstd=17
+      
+    larcorealg:
+      require:
+      - '@=10.00.02'
+      - build_type=Release
+      - generator=ninja
+      - cxxstd=17
+      
+    larcoreobj:
+      require:
+      - '@=10.00.00'
+      - build_type=Release
+      - generator=ninja
+      - cxxstd=17
+      
+    lardata:
+      require:
+      - '@=10.00.08'
+      - build_type=Release
+      - generator=ninja
+      - cxxstd=17
+      
+    lardataalg:
+      require:
+      - '@=10.00.06'
+      - build_type=Release
+      - generator=ninja
+      - cxxstd=17
+      
+    lardataobj:
+      require:
+      - '@=10.01.00'
+      - generator=ninja
+      - build_type=Release
+      - cxxstd=17
+      
+    lareventdisplay:
+      require:
+      - '@=10.00.15'
+      - build_type=Release
+      - generator=ninja
+      - cxxstd=17
+      
+    larevt:
+      require:
+      - '@=10.00.08'
+      - build_type=Release
+      - generator=ninja
+      - cxxstd=17
+      
+    larexamples:
+      require:
+      - '@=10.00.12'
+      - build_type=Release
+      - generator=ninja
+      - cxxstd=17
+      
+    larg4:
+      require:
+      - '@=10.00.09'
+      - build_type=Release
+      - generator=ninja
+      - cxxstd=17
+      
+    larpandora:
+      require:
+      - '@=10.00.19'
+      - build_type=Release
+      - generator=ninja
+      - cxxstd=17
+      
+    larpandoracontent:
+      require:
+      - '@=04.15.01'
+      - build_type=Release
+      - +monitoring
+      - generator=ninja
+      - cxxstd=17
+      
+    larreco:
+      require:
+      - '@=10.01.12'
+      - build_type=Release
+      - generator=ninja
+      - cxxstd=17
+      
+    larrecodnn:
+      require:
+      - '@=10.01.10'
+      - build_type=Release
+      - generator=ninja
+      - cxxstd=17
+      
+    larsim:
+      require:
+      - '@=10.04.00'
+      - build_type=Release
+      - generator=ninja
+      - cxxstd=17
+      
+    larsimdnn:
+      require:
+      - '@=10.00.11'
+      - build_type=Release
+      - generator=ninja
+      - cxxstd=17
+      
+    larsimrad:
+      require:
+      - '@=10.00.12'
+      - build_type=Release
+      - generator=ninja
+      - cxxstd=17
+      
+    larsoft:
+      require:
+      - '@=10.06.00'
+      - build_type=Release
+      - generator=ninja
+      - +eventdisplay
+      - +tensorflow
+      - cxxstd=17
+      
+    larsoftobj:
+      require:
+      - '@=10.01.00'
+    larwirecell:
+      require:
+      - '@=10.01.10'
+      - build_type=Release
+      - generator=ninja
+      - cxxstd=17
+      
+    marley:
+      require:
+      - '@=1.2.1'
+    messagefacility:
+      require:
+      - '@=2.10.05'
+      - build_type=RelWithDebInfo
+      - generator=ninja
+      - cxxstd=17
+      
+    nug4:
+      require:
+      - '@=1.16.06'
+      - build_type=Release
+      - generator=ninja
+      - cxxstd=17
+      
+    nugen:
+      require:
+      - '@=1.21.02'
+      - build_type=Release
+      - generator=ninja
+      - cxxstd=17
+      
+    nurandom:
+      require:
+      - '@=1.11.05'
+      - build_type=Release
+      - generator=ninja
+      - cxxstd=17
+      
+    nusimdata:
+      require:
+      - '@=1.28.06'
+      - build_type=Release
+      - generator=ninja
+      - cxxstd=17
+      
+    nutools:
+      require:
+      - '@=3.17.00'
+      - build_type=Release
+      - generator=ninja
+      - cxxstd=17
+      
+    py-fhicl-py:
+      require:
+      - '@=4.03.05'
+      - build_type=RelWithDebInfo
+      - cxxstd=17
+      
+    root:
+      require:
+      - ~davix+emacs+fftw+http+math+mlp+opengl+postgres+pythia6+root7+spectrum+sqlite+ssl+tmva+tmva-pymva+xrootd
+      - '@6.28.12'
+      - build_type=RelWithDebInfo
+      - generator=ninja
+      - cxxstd=17
+      
+    trace:
+      require:
+      - '@v3_17_11'
+      - build_type=Release
+      - generator=ninja
+      - +mf~kmod
+      
+    fftw-api:
+      require:
+      - fftw
+    tbb:
+      require:
+      - builtin.intel-oneapi-tbb
+    zlib-api:
+      require:
+      - zlib
