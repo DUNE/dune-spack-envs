@@ -5,8 +5,8 @@
 # configuration settings.
 spack:
   specs:
-  - larsoft%c,cxx=gcc@12.5.0
-  - dunesw%c,cxx=gcc@12.5.0
+  - larsoft%c,cxx=gcc@13
+  - dunesw%c,cxx=gcc@13
   view: false
   concretizer:
     reuse:
