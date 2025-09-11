@@ -14,8 +14,6 @@ spack:
             c: /usr/bin/gcc
             cxx: /usr/bin/g++
             fortran: /usr/bin/gfortran
-    binutils:
-      require: "@2.43"
 
   view: true
   concretizer:
