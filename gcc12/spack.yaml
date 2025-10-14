@@ -1,7 +1,7 @@
 spack:
 
   specs:
-  - gcc @12.5 +binutils
+  - gcc @12.2 +binutils
 
   packages:
 
@@ -15,6 +15,11 @@ spack:
             cxx: /usr/bin/g++
             fortran: /usr/bin/gfortran
 
-  view: true
   concretizer:
+    reuse:
+      from:
+      - type: local
+      - type: external
+    targets:
+      granularity: generic
     unify: true
