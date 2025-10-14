@@ -15,5 +15,6 @@ spack:
             cxx: /usr/bin/g++
             fortran: /usr/bin/gfortran
 
+  concretizer:
     targets:
       granularity: generic
