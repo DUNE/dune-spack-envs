@@ -5,6 +5,7 @@
 # configuration settings.
 spack:
   specs:
+  - justin %gcc12
   - r-m-dd-config %gcc12
   - root %gcc12
 
@@ -326,6 +327,10 @@ spack:
       - '@=4.03.05'
       - build_type=RelWithDebInfo
       - cxxstd=17
+
+    r_m_dd_config:
+      require:
+      - experiment=dune
       
     root:
       require:
@@ -345,9 +350,11 @@ spack:
     fftw-api:
       require:
       - fftw
+
     tbb:
       require:
       - builtin.intel-oneapi-tbb
     zlib-api:
+
       require:
       - zlib
