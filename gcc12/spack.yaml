@@ -15,10 +15,5 @@ spack:
             cxx: /usr/bin/g++
             fortran: /usr/bin/gfortran
 
-  concretizer:
-    reuse:
-      from:
-      - type: local
-      - type: external
     targets:
       granularity: generic
