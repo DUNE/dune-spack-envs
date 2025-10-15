@@ -317,8 +317,23 @@ packages:
 
   root:
     require:
-    - ~davix+emacs+fftw+http+math+mlp+opengl+postgres+pythia6+root7+spectrum+sqlite+ssl+tmva+tmva-pymva+xrootd
     - '@6.28.12'
+    - ~davix
+    - +emacs
+    - +fftw
+    - +http
+    - +math
+    - +mlp
+    - +opengl
+    - +postgres
+    - +pythia6
+    - +root7
+    - +spectrum
+    - +sqlite
+    - +ssl
+    - +tmva
+    - +tmva-pymva
+    - +xrootd
     - build_type=RelWithDebInfo
     - generator=ninja
     - cxxstd=17
