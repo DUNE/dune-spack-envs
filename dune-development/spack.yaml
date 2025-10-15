@@ -4,9 +4,11 @@
 # It describes a set of packages to be installed, along with
 # configuration settings.
 spack:
+
   specs:
-  - larsoft%c,cxx=gcc@12
-  - dunesw%c,cxx=gcc@12
+  - larsoft %gcc12
+  - dune-sw %gcc12
+
   view: false
   concretizer:
     reuse:
@@ -16,10 +18,6 @@ spack:
     targets:
       granularity: generic
     unify: true
-  packages:
-    all:
-      target:
-      - x86_64_v2
 
     art:
       require:
@@ -325,7 +323,11 @@ spack:
       - '@=4.03.05'
       - build_type=RelWithDebInfo
       - cxxstd=17
-      
+
+    r-m-dd-config:
+      require:
+      - experiment=dune
+
     root:
       require:
       - ~davix+emacs+fftw+http+math+mlp+opengl+postgres+pythia6+root7+spectrum+sqlite+ssl+tmva+tmva-pymva+xrootd
