@@ -328,7 +328,7 @@ spack:
       - build_type=RelWithDebInfo
       - cxxstd=17
 
-    r_m_dd_config:
+    r-m-dd-config:
       require:
       - experiment=dune
       
@@ -354,7 +354,7 @@ spack:
     tbb:
       require:
       - builtin.intel-oneapi-tbb
-    zlib-api:
 
+    zlib-api:
       require:
       - zlib
