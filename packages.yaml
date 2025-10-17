@@ -305,6 +305,10 @@ packages:
     - generator=ninja
     - cxxstd=17
 
+  python:
+    require:
+    - "@3.11"
+
   py-fhicl-py:
     require:
     - '@=4.03.05'
