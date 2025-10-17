@@ -318,6 +318,9 @@ packages:
   root:
     require:
     - '@6.28.12'
+    - build_type=RelWithDebInfo
+    - generator=ninja
+    - cxxstd=17
     - ~davix
     - +emacs
     - +fftw
@@ -334,9 +337,6 @@ packages:
     - +tmva
     - +tmva-pymva
     - +xrootd
-    - build_type=RelWithDebInfo
-    - generator=ninja
-    - cxxstd=17
 
   trace:
     require:
