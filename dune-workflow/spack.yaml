@@ -5,6 +5,7 @@
 # configuration settings.
 spack:
   specs:
+  - ifdhc %gcc12
   - justin %gcc12
   - r-m-dd-config %gcc12
   - root %gcc12
