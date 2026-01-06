@@ -41,10 +41,10 @@ spack:
 
   specs:
     - $specs_art
-    - $nusofthep_specs
-    - $larsoft_specs
+    - $specs_nusofthep
+    - $specs_larsoft
     - $fife_specs
-    - $dune_specs
+    - $specs_dune
 
   upstreams:
     cvmfs-larsoft:
