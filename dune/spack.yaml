@@ -29,7 +29,7 @@ spack:
 
   # FIFE
   - path: https://raw.githubusercontent.com/fnal-fife/fife-release-configs/refs/heads/main/included_yaml/fife_packages.yaml
-    sha256: db6b29551f8a94ffab1ca7f3457ba9da47da5d4fa9b62f6ba2b81ea660118bcb
+    sha256: b7b7ef7ceaaa947c2cead036409f04aac94f5de357f6b7407699d00d511cfaa3
   - path: https://raw.githubusercontent.com/fnal-fife/fife-release-configs/refs/heads/main/included_yaml/fife_specs.yaml
     sha256: 080dececfa749775969fe1f8b94ec8779c8143b5939aaf0f83390303c39ff110
 
