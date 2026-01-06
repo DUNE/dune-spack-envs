@@ -31,7 +31,7 @@ spack:
   - path: https://raw.githubusercontent.com/fnal-fife/fife-release-configs/refs/heads/main/included_yaml/fife_packages.yaml
     sha256: b7b7ef7ceaaa947c2cead036409f04aac94f5de357f6b7407699d00d511cfaa3
   - path: https://raw.githubusercontent.com/fnal-fife/fife-release-configs/refs/heads/main/included_yaml/fife_specs.yaml
-    sha256: 080dececfa749775969fe1f8b94ec8779c8143b5939aaf0f83390303c39ff110
+    sha256: b0306775ce16510f7d099d597b3e07cd118f0a178362fdaea0273a8b788eca37
 
   # DUNE
   - path: https://raw.githubusercontent.com/DUNE/dune-spack-config/refs/heads/main/included_yaml/dune-packages.yaml
